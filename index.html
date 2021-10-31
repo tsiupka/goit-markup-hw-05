@@ -47,7 +47,19 @@
 <section class="hero-section hero-background"> 
     <div class="container">
 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-<button class="hero-button" type="button"  name="order-service">Заказать услугу</button>
+
+
+<button class="hero-button " type="button"  name="order-service" data-open-modal>Заказать услугу</button>
+<div class="backdrop is-hidden" data-backdrop>
+  <div class="modal">
+     <button class="modal-close" data-close-modal>
+                  <svg class="modal-close-button" width="18" height="18">
+                    <use href="./images/sprite.svg#modal-close-button">
+                    </use>
+                  </svg>
+    </button>
+  </div>
+</div>
 <!--<input type="button" value="Заказать услугу"> -->
 </section> 
 </div>
@@ -106,9 +118,15 @@
     <div class="container">
     <h2 class="what-we-are-doing"> Чем мы занимаемся </h2>
 <ul class="what-we-are-doig-list">
-            <li class="sample-image"><img src="./images/coding.jpg" alt="coding" width="370"></li>
-            <li class="sample-image"><img src="./images/app-design.jpg" alt="app-design" width="370"></li>
-            <li class="sample-image"><img src="./images/design.jpg" alt="design" width="370"></li>
+            <li class="sample-image"><img src="./images/coding.jpg" alt="coding" width="370">
+              <div class="sample-image-sign"><p class="sample-image-p" >Десктопные приложения</p></div>
+            </li>
+            <li class="sample-image"><img src="./images/app-design.jpg" alt="app-design" width="370">
+              <div class="sample-image-sign"><p class="sample-image-p" >Мобильные приложения</p></div>
+            </li>
+            <li class="sample-image"><img src="./images/design.jpg" alt="design" width="370">
+            <div class="sample-image-sign"> <p class="sample-image-p">Дизайнерские решения</p></div>
+            </li>
     
 </ul>
 </div>
@@ -382,5 +400,6 @@
         </div>
 
 </footer><!--end-of-footer-section--><!--end-of-footer-section-->
+<script src="./modal.js"></script>
 </body>
 </html>
