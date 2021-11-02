@@ -239,6 +239,7 @@ a[href="tel:+380961111111"]:focus
         position: absolute;
         top: 50%;
         left: 50%;
+        padding: 40px;
         transform: translate(-50%, -50%);
         width: 528px;
         height: 581px;
@@ -602,8 +603,17 @@ a[href="tel:+380961111111"]:focus
         color: var(--color-rgba-255-255-255-06);
 }
 
-.footer-adress-list a:hover {
-        color: var(--color-2196f3);
+.mail-link:hover,
+.call-link:hover,
+.call-link:focus,
+.mail-link:focus {
+        color: var(--color-f5f4fa);
+}
+
+.call-link,
+.mail-link {
+        transition: color var(--transition-duration)
+                var(--transition-timing-function);
 }
 
 .footer-section {
@@ -621,13 +631,6 @@ a[href="tel:+380961111111"]:focus
 .direction-link,
 .mail-link {
         margin-bottom: 9px;
-        transition: color var(--transition-duration)
-                var(--transition-timing-function);
-}
-
-.call-link {
-        transition: color var(--transition-duration)
-                var(--transition-timing-function);
 }
 
 .footer-container {
